@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In-Person Summer Science Programs</title>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+    <style>
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+<h2>In-Person Summer Science Programs</h2>
+
+<table id="programsTable">
+    <thead>
+        <tr>
+            <th>Program Name</th>
+            <th>Location</th>
+            <th>Stipend</th>
+            <th>Fee</th>
+            <th>Financial Assistance</th>
+            <th>Application Deadline</th>
+            <th>Program Dates</th>
+            <th>Age Requirement</th>
+            <th>Eligibility</th>
+            <th>Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Physics of Atomic Nuclei (PAN) by JINA-CEE</td>
+            <td>Michigan State University</td>
+            <td>Free</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td></td>
+            <td>July 23 – July 28</td>
+            <td>All high school students, US residents</td>
+            <td>N/A</td>
+            <td><a href="https://frib.msu.edu/public/frib-outreach/pan">frib</a></td>
+        </tr>
+        <tr>
+            <td>Advanced Teen Astronomy Camp</td>
+            <td>Mt. Lemmon Observatory</td>
+            <td>N/A</td>
+            <td>$1,800</td>
+            <td>Need-based scholarships available</td>
+            <td>First-come, first-serve</td>
+            <td>June 17 – June 24</td>
+            <td>Ages 14-18</td>
+            <td>N/A</td>
+            <td><a href="http://www.astronomycamp.org/docs/atcapp.html">astronomycamp</a></td>
+        </tr>
+        <tr>
+            <td>NASA Internships at the Goddard Space Flight Center</td>
+            <td>Varies</td>
+            <td>Available</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>Early March</td>
+            <td>10 weeks from late May/early June – August</td>
+            <td>Minimum 16 years, US citizens</td>
+            <td>Cumulative GPA 3.0</td>
+            <td><a href="https://science.gsfc.nasa.gov/660/student_opps/highschool.html">NASA Internships</a></td>
+        </tr>
+        <tr>
+            <td>Summer Science Program</td>
+            <td>New Mexico State, University of Colorado, UNC Chapel Hill</td>
+            <td>N/A</td>
+            <td>$8,400</td>
+            <td>Available based on financials</td>
+            <td>March 3</td>
+            <td>June 18 – July 26</td>
+            <td>High school juniors (15-19 years)</td>
+            <td>Completed prerequisites</td>
+            <td><a href="https://www.summerscience.org/">summerscience</a></td>
+        </tr>
+        <tr>
+            <td>Yale Summer Program in Astrophysics</td>
+            <td>Yale University</td>
+            <td>N/A</td>
+            <td>$6,900</td>
+            <td>Limited need-based financial aid</td>
+            <td>March 13</td>
+            <td>June 26 – August 6</td>
+            <td>Rising seniors (15.5 years+)</td>
+            <td>N/A</td>
+            <td><a href="https://physics.yale.edu/">physics.yale</a></td>
+        </tr>
+        <tr>
+            <td>REACH (Research Experiences in Astronomy at CIERA)</td>
+            <td>Northwestern University</td>
+            <td>N/A</td>
+            <td>$2,500</td>
+            <td>Full and partial scholarships available</td>
+            <td>March 20</td>
+            <td>June 12 – July 28</td>
+            <td>All high school students</td>
+            <td>N/A</td>
+            <td><a href="https://sites.northwestern.edu/cierahs/">northwestern</a></td>
+        </tr>
+        <tr>
+            <td>Horizon Academic Research Program (HARP)</td>
+            <td>Virtual</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>May 21 (Summer)</td>
+            <td>Summer: June 24 - September 2<br>Fall: October 23 - February 19</td>
+            <td>Good academic standing (>3.67 GPA)</td>
+            <td>Mostly 10th/11th graders</td>
+            <td><a href="https://www.horizonacademic.com/">horizonacademic</a></td>
+        </tr>
+        <tr>
+            <td>Anson L. Clark Scholars Program</td>
+            <td>Texas Tech University</td>
+            <td>$750</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>February 15</td>
+            <td>June 18 – August 3</td>
+            <td>17 years old, graduating in 2024 or 2025</td>
+            <td>U.S. Citizen or Permanent Resident</td>
+            <td><a href="https://www.depts.ttu.edu/honors/academicsandenrichment/affiliatedandhighschool/clarks/index.php">depts.ttu.edu</a></td>
+        </tr>
+        <tr>
+            <td>Center for Talented Youth’s Astrophysics Course</td>
+            <td>Franklin and Marshall College (Johns Hopkins)</td>
+            <td>N/A</td>
+            <td>$5,999</td>
+            <td>Limited financial aid available</td>
+            <td>May 19</td>
+            <td>June 25 – July 14 (Session 1), July 16 – August 4 (Session 2)</td>
+            <td>Grades 7 to 11</td>
+            <td>Advanced CTY-level math scores</td>
+            <td><a href="https://cty.jhu.edu/programs/on-campus/courses/astrophysics-astr">cty.jhu</a></td>
+        </tr>
+        <tr>
+            <td>International Summer School for Young Physicists</td>
+            <td>Online</td>
+            <td>$250 (CAD)</td>
+            <td>N/A</td>
+            <td>Limited need-based funding available</td>
+            <td>March 16</td>
+            <td>July 17 – July 28</td>
+            <td>Juniors and seniors</td>
+            <td>Passion for physics and math</td>
+            <td><a href="https://issyp.ca/">issyp</a></td>
+        </tr>
+        <tr>
+            <td>UPenn’s Experimental Physics Research Academy</td>
+            <td>University of Pennsylvania</td>
+            <td>N/A</td>
+            <td>$9,700</td>
+            <td>Available for select Philadelphia students</td>
+            <td>Closed for 2023</td>
+            <td>July 9 – July 29</td>
+            <td>Freshmen, sophomores, and juniors</td>
+            <td>N/A</td>
+            <td><a href="https://www.physics.upenn.edu/">physics.upenn</a></td>
+        </tr>
+        <tr>
+            <td>MIT's Research Science Institute (RSI)</td>
+            <td>Massachusetts Institute of Technology</td>
+            <td>N/A</td>
+            <td>$5,500</td>
+            <td>Limited need-based financial aid</td>
+            <td>Late January</td>
+            <td>June 18 – August 4</td>
+            <td>Grades 11 and 12</td>
+            <td>Exceptional high school students</td>
+            <td><a href="https://www.mit.edu/">RSI</a></td>
+        </tr>
+        <tr>
+            <td>National Youth Science Camp (NYSC)</td>
+            <td>West Virginia</td>
+            <td>N/A</td>
+            <td>Free</td>
+            <td>N/A</td>
+            <td>March</td>
+            <td>June 26 – July 22</td>
+            <td>16-17 years old</td>
+            <td>Selected by state coordinators</td>
+            <td><a href="http://www.nysc.org/">NYSC</a></td>
+        </tr>
+        <tr>
+            <td>Scripps Research Science Internship</td>
+            <td>Scripps Research Institute, California</td>
+            <td>N/A</td>
+            <td>Free</td>
+            <td>N/A</td>
+            <td>Early March</td>
+            <td>June 11 – July 27</td>
+            <td>Ages 16-18</td>
+            <td>N/A</td>
+            <td><a href="https://www.scripps.edu/education/">Scripps</a></td>
+        </tr>
+        <tr>
+            <td>Stanford Pre-Collegiate Summer Institutes</td>
+            <td>Stanford University</td>
+            <td>N/A</td>
+            <td>$5,300</td>
+            <td>Limited need-based financial aid</td>
+            <td>March 1</td>
+            <td>June 25 – August 4</td>
+            <td>Grades 8-11</td>
+            <td>High school students</td>
+            <td><a href="https://precollegiate.stanford.edu/">Stanford</a></td>
+        </tr>
+        <tr>
+            <td>Georgia Tech Pre-College Program</td>
+            <td>Georgia Institute of Technology</td>
+            <td>N/A</td>
+            <td>$2,000</td>
+            <td>Limited need-based financial aid</td>
+            <td>April</td>
+            <td>June 18 – July 20</td>
+            <td>Rising 10th-12th graders</td>
+            <td>High school students</td>
+            <td><a href="https://www.precollege.gatech.edu/">GT</a></td>
+        </tr>
+        <tr>
+            <td>Summer Scholars Program</td>
+            <td>University of Chicago</td>
+            <td>N/A</td>
+            <td>$5,000</td>
+            <td>Limited financial aid available</td>
+            <td>February</td>
+            <td>June 25 – August 3</td>
+            <td>15-18 years old</td>
+            <td>High school students</td>
+            <td><a href="https://www.summer.uchicago.edu/">UChicago</a></td>
+        </tr>
+        <tr>
+            <td>Research for Teens Program</td>
+            <td>California State University, Los Angeles</td>
+            <td>N/A</td>
+            <td>$1,000</td>
+            <td>N/A</td>
+            <td>Late April</td>
+            <td>July 10 – July 31</td>
+            <td>Ages 14-18</td>
+            <td>N/A</td>
+            <td><a href="https://www.calstatela.edu/academic/research-for-teens">CSULA</a></td>
+        </tr>
+        <tr>
+            <td>COSMOS: California State Summer School for Mathematics and Science</td>
+            <td>University of California campuses (Davis, Irvine, Santa Cruz, etc.)</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>Varies</td>
+            <td>Varies</td>
+            <td>Grades 8-12</td>
+            <td>High school students</td>
+            <td><a href="https://cosmos-ucop.ucdavis.edu">COSMOS</a></td>
+        </tr>
+        <tr>
+            <td>European Space Camp</td>
+            <td>Andøya Space, Northern Norway</td>
+            <td>N/A</td>
+            <td>Free</td>
+            <td>N/A</td>
+            <td>January 1, 2024</td>
+            <td>August 4 – August 11, 2024</td>
+            <td>Ages 17-20</td>
+            <td>High school level physics and math</td>
+            <td><a href="https://spacecamp.no">ESC</a></td>
+        </tr>
+        <tr>
+            <td>International Astronomical Youth Camp (IAYC)</td>
+            <td>Klingenthal, Germany</td>
+            <td>N/A</td>
+            <td>€1,090</td>
+            <td>Limited grants available</td>
+            <td>March 17, 2024</td>
+            <td>July 14 – August 4, 2024</td>
+            <td>Ages 16-24 (25 for past attendees)</td>
+            <td>N/A</td>
+            <td><a href="https://www.iayc.org">IAYC</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>Not Physical Science</h2>
+
+<table id="notPhysicalScienceTable">
+    <thead>
+        <tr>
+            <th>Program Name</th>
+            <th>Location</th>
+            <th>Stipend</th>
+            <th>Fee</th>
+            <th>Financial Assistance</th>
+            <th>Application Deadline</th>
+            <th>Program Dates</th>
+            <th>Age Requirement</th>
+            <th>Eligibility</th>
+            <th>Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Columbia Climate School</td>
+            <td>Columbia Climate School in the Green Mountains</td>
+            <td>N/A</td>
+            <td>$6,790</td>
+            <td>Full & partial scholarship</td>
+            <td>TBD</td>
+            <td>13 days</td>
+            <td>High School Students</td>
+            <td>N/A</td>
+            <td><a href="https://www.climate.columbia.edu/green-mountains">columbia</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+$(document).ready(function() {
+    $('#programsTable').DataTable();
+    $('#notPhysicalScienceTable').DataTable();
+});
+</script>
+
+</body>
+</html>
